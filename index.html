@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drums112</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем библиотеку конфетти -->
+</head>
+
+<body>
+
+    <!-- СЦЕНА 1: Оборачиваем карточку в контейнер сцены -->
+    <div id="first-scene">
+        <div class="card" id="clickable-card">
+            <p class="click-me-text">открой если любишь маму</p>
+        </div>
+    </div>
+
+    <!-- СЦЕНА 2: Главный блок пранка -->
+    <div class="question-container hidden" id="secret-question">
+        <img src="photo.png" alt="Кристина" class="question-img">
+
+        <div class="content-right">
+            <h2 id="main-question-text">ты какаешь?</h2>
+
+            <!-- Ваш круглый видео-кружок Telegram -->
+            <video id="end-video" src="my-video.mp4" loop playsinline></video>
+
+            <div class="buttons">
+                <button id="btn-yes">Да!</button>
+                <button id="btn-no">Нет</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Музыка на повторе -->
+    <audio id="bg-music" src="music.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
