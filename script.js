@@ -173,7 +173,7 @@ btnYes.addEventListener('touchstart', moveYesButton);
 // 4. Клик по кнопке "Да" (Финал)
 btnYes.addEventListener('click', function () {
     if (currentStep === 1 && hasTriedNo === true) {
-        mainText.textContent = "это я крч, надеюсь я в блок не улечу. сам прикол чет уже не прикалывает меня,пох";
+        mainText.textContent = "это я крч, я надеюсь норм внешка";
         btnYes.style.display = 'none';
         btnNo.style.display = 'none';
 
@@ -184,7 +184,7 @@ btnYes.addEventListener('click', function () {
     }
     else if (currentStep === 1 && hasTriedNo === false) {
         currentStep = 2;
-        mainText.textContent = "балин, есть прикол один, нажимай на нет везде";
+        mainText.textContent = "нажимай на нет везде";
         triggerShake();
         const coords = getFarCoordinates(btnYes);
         btnYes.style.left = coords.x + 'px';
@@ -197,7 +197,7 @@ btnNo.addEventListener('click', function () {
     if (currentStep === 2) {
         mainText.textContent = "";
         setTimeout(function () {
-            mainText.textContent = "мы друзья?";
+            mainText.textContent = "поболтаем??";
             btnNo.style.transform = 'scale(1)';
             btnNo.style.width = '100px';
             btnNo.style.height = '45px';
