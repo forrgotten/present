@@ -173,7 +173,7 @@ btnYes.addEventListener('touchstart', moveYesButton);
 // 4. Клик по кнопке "Да" (Финал)
 btnYes.addEventListener('click', function () {
     if (currentStep === 1 && hasTriedNo === true) {
-        mainText.textContent = "это я крч, типа странно как то, что ты не знаешь как я выгляжу, как-будто не честно";
+        mainText.textContent = "это я крч, надеюсь я в блок не улечу. сам прикол чет уже не прикалывает меня, но пох";
         btnYes.style.display = 'none';
         btnNo.style.display = 'none';
 
