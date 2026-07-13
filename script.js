@@ -159,7 +159,7 @@ function moveYesButton() {
         triggerShake();
 
         if (yesRunCount === 3) {
-            mainText.textContent = "ладно.. реально с 1 раза?";
+            mainText.textContent = "да нажми ну";
             btnNo.style.transform = 'scale(2)';
             btnNo.style.left = 'calc(50% - ' + (btnNo.offsetWidth * 2 / 2) + 'px)';
             btnNo.style.top = '30px';
@@ -173,7 +173,7 @@ btnYes.addEventListener('touchstart', moveYesButton);
 // 4. Клик по кнопке "Да" (Финал)
 btnYes.addEventListener('click', function () {
     if (currentStep === 1 && hasTriedNo === true) {
-        mainText.textContent = "ПФАХААХАХАХ, так и знал😂";
+        mainText.textContent = "это я крч, типа странно как то, что ты не знаешь как я выгляжу, как-будто не честно";
         btnYes.style.display = 'none';
         btnNo.style.display = 'none';
 
@@ -184,7 +184,7 @@ btnYes.addEventListener('click', function () {
     }
     else if (currentStep === 1 && hasTriedNo === false) {
         currentStep = 2;
-        mainText.textContent = "рил с первого раза? 🤨";
+        mainText.textContent = "балин, есть прикол один, нажимай на нет везде";
         triggerShake();
         const coords = getFarCoordinates(btnYes);
         btnYes.style.left = coords.x + 'px';
@@ -195,9 +195,9 @@ btnYes.addEventListener('click', function () {
 // 5. Возврат назад
 btnNo.addEventListener('click', function () {
     if (currentStep === 2) {
-        mainText.textContent = "ясно😏";
+        mainText.textContent = "";
         setTimeout(function () {
-            mainText.textContent = "ты какаешь? 🌹";
+            mainText.textContent = "мы друзья?";
             btnNo.style.transform = 'scale(1)';
             btnNo.style.width = '100px';
             btnNo.style.height = '45px';
